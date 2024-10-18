@@ -1,5 +1,3 @@
-# Notes on Streamlit, SMTP, and Pandas
-
 ## Streamlit
 
 ### Overview
