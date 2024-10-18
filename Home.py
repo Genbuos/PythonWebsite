@@ -9,10 +9,10 @@ with col1:
 
 with col2:
     st.title("Jordan Mitchell")
-    content = '''Hello! I am a freelance Python Programmer with a specialty in AWS cloud computing. I graduated 
-in 2024 from Wilmington University with a Undergraduate Certificate in Web App Development.'''
+    content = '''Hello! I am a freelance Programmer with a specialty in Object Oriented Programming. I graduated 
+in 2024 from Wilmington University with a Undergraduate Certificate in Web Application Development.'''
     st.info(content)
-st.write("Below are some projects that I have worked on. Feel free to contact me!")
+st.write("Below are projects that I have worked on. Feel free to contact me!")
 
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv",sep=";")
