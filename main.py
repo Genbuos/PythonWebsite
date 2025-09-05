@@ -1,23 +1,5 @@
-
 import streamlit as st
 import pandas
-
-# --- FastAPI static file handler for 3D models and images ---
-import os
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-import threading
-
-def run_fastapi():
-    app = FastAPI()
-    static_dir = os.path.join(os.path.dirname(__file__), "images")
-    app.mount("/static", StaticFiles(directory=static_dir), name="static")
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8502)
-
-# Start FastAPI in a background thread if not already running
-if os.environ.get("RUN_MAIN") != "true":
-    threading.Thread(target=run_fastapi, daemon=True).start()
 
 st.set_page_config(layout='wide')
 
