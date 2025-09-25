@@ -83,7 +83,7 @@ for row_idx in range(num_rows):
             # Render .glb model for the first project, otherwise show image
             if proj_idx == 0:
                 st.markdown(
-                    '<model-viewer src="images/todo.glb" alt="3D model" auto-rotate camera-controls style="width:100%;height:300px;background:#eee;border-radius:8px;"></model-viewer>',
+                    '<iframe src="http://localhost:8000/test.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
             else:
