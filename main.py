@@ -10,9 +10,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Add a refresh button for development
-if st.button('🔄 Refresh'):
-    st.rerun()
+
 
 # Add custom CSS for project buttons (Source Code and Website only)
 st.markdown(
