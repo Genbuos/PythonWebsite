@@ -83,22 +83,22 @@ for row_idx in range(num_rows):
             # Render .glb model for the first project, otherwise show image
             if proj_idx == 0:
                 st.markdown(
-                    '<iframe src="http://localhost:8000/test.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/test.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
             elif row['title'].lower().startswith('portfolio'):
                 st.markdown(
-                    '<iframe src="http://localhost:8000/portfolio_preview.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/portfolio_preview.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
             elif row['title'].lower().startswith('food'):
                 st.markdown(
-                    '<iframe src="http://localhost:8000/foodtrax.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/foodtrax.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
             elif row['title'].lower().startswith('bank'):
                 st.markdown(
-                    '<iframe src="http://localhost:8000/coin.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/coin.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
             else:
