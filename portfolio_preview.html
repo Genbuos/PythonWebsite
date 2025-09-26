@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Portfolio Preview</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+  body { margin:0; font-family: system-ui, sans-serif; background: rgb(14,17,23); color: #f5f5f5; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 24px; text-align: center; }
+  h1 { font-size: 1.8rem; margin-bottom: .5rem; }
+  p { line-height: 1.4; font-size: .95rem; opacity: .9; }
+  .placeholder { margin-top: 18px; border: 1px solid #2a2f38; border-radius: 8px; padding: 16px; background: #1c222b; }
+  model-viewer { width:100%; height:360px; background: rgb(14,17,23); border:1px solid #2a2f38; border-radius:8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Portfolio Website</h1>
+    <p>This is a preview iframe for the Portfolio project. Replace this file's content later with a live mini demo, screenshots, or interactive elements.</p>
+  <model-viewer src="https://raw.githubusercontent.com/Genbuos/PythonWebsite/master/images/portfolio.glb"
+    alt="Rotating preview"
+    camera-orbit="0deg 15deg 18m"
+    camera-target="0m 1m 1m"
+    field-of-view="40deg"
+    autoplay
+    interaction-prompt="none"
+    disable-zoom
+    rotation-per-second="15deg">
+  </model-viewer>
+  </div>
+</body>
+</html>
