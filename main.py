@@ -96,6 +96,11 @@ for row_idx in range(num_rows):
                     '<iframe src="http://localhost:8000/foodtrax.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
                     unsafe_allow_html=True
                 )
+            elif row['title'].lower().startswith('bank'):
+                st.markdown(
+                    '<iframe src="http://localhost:8000/coin.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    unsafe_allow_html=True
+                )
             else:
                 st.image("images/" + str(row['image']))
             
