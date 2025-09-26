@@ -93,12 +93,12 @@ for row_idx in range(num_rows):
                 )
             elif row['title'].lower().startswith('food'):
                 st.markdown(
-                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/foodtrax.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/foodtrax.html" width="100%" height="350" frameborder="0" scrolling="no" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>',
                     unsafe_allow_html=True
                 )
             elif row['title'].lower().startswith('bank'):
                 st.markdown(
-                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/coin.html" width="100%" height="350" frameborder="0" scrolling="no"></iframe>',
+                    '<iframe src="https://3dmodels-kjr63imp4-jordan-mitchells-projects-346ebe6c.vercel.app/coin.html" width="100%" height="350" frameborder="0" scrolling="no" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>',
                     unsafe_allow_html=True
                 )
             else:
