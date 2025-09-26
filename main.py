@@ -98,12 +98,22 @@ for row_idx in range(num_rows):
                 )
             else:
                 st.image("images/" + str(row['image']))
-            st.markdown(
-                f'<a href="{row["url"]}" class="project-btn source-btn" target="_blank">Source Code</a>'
-                f'<a href="{row["website_url"]}" class="project-btn website-btn" target="_blank">Website</a>',
-                unsafe_allow_html=True
-            )
-            if not row["website_url"] or row["website_url"] == "#":
-                st.warning("Website not running!")
+            
+            # Show buttons based on project - hide website button for Bank Application
+            if row['title'].lower().startswith('bank'):
+                # Only show Source Code button for Bank Application
+                st.markdown(
+                    f'<a href="{row["url"]}" class="project-btn source-btn" target="_blank">Source Code</a>',
+                    unsafe_allow_html=True
+                )
+            else:
+                # Show both buttons for other projects
+                st.markdown(
+                    f'<a href="{row["url"]}" class="project-btn source-btn" target="_blank">Source Code</a>'
+                    f'<a href="{row["website_url"]}" class="project-btn website-btn" target="_blank">Website</a>',
+                    unsafe_allow_html=True
+                )
+                if not row["website_url"] or row["website_url"] == "#":
+                    st.warning("Website not running!")
             st.markdown('</div>', unsafe_allow_html=True)
 
